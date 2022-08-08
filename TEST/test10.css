@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Koulen&family=Roboto:wght@700;900&display=swap');
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Bungee', cursive;
+font-family: 'Koulen', cursive;
+font-family: 'Roboto', sans-serif; */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+    font-size: 14em;
+    height: 2000px;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    
+}
+
+.container {
+    position: relative;
+    display: flex;
+    /* flex-flow: column; */
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* font-size: 15em;
+    font-family: 'Roboto';
+    background: url(../space_station-HD_Space_Wallpapers_1366x768.jpg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.3em; */
+}
+
+.title {
+    display:inline;
+    position:relative;
+    font-size: 1em;
+    font-family: 'Roboto';
+    background: url(../);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: blink; 
+   
+    
+  }
+
+.title1 {
+    /* animation-name: moving; */
+    animation-name: glowing;
+    animation-duration:0.3s;
+    animation-iteration-count:1;
+    animation-timing-function:ease;
+    animation-delay:5s;
+    animation-fill-mode:backwards;
+    transform: translate(2000px, 0);
+    transition: 2s;
+    margin-top: 4vh;
+   }
+
+   section:hover .container .title1 {
+    transform: translateX(35vh);
+   }
+
+
+
+   
+  
+  /* @keyframes moving {
+    0% {
+      top:150px;
+    } 
+    98% {
+      top:-5px;
+    }
+    100% {
+      top:0%;
+    }
+  } */
+
+  /* @keyframes glowing {
+    0%, 100% {
+     
+      color: #FFF;
+      text-shadow: 0 0 10px #0652DD, 0 0 50px #0652DD, 0 0 100px #0652DD;
+    }
+    
+    10%, 90% {
+     
+      color: #111;
+      text-shadow: none;
+    }
+  } */
+  
+  .title2 {
+    /* animation-name: moving; */
+    animation-name: glowing;
+    animation-duration:0.2s;
+    animation-iteration-count:1;
+    animation-timing-function:ease;
+    animation-delay:5.2s;
+    animation-fill-mode:backwards;
+    transform: translate(-3000px, 0);
+    transition: 2s;
+    transition-delay: .1s;
+    margin-top: 4vh;
+   }
+
+   section:hover .container .title2 {
+    transform: translateX(-30.5vh);
+   }
+  
+  .title3 {
+    /* animation-name: moving; */
+    animation-name: blinking;
+    animation-duration:0.2s;
+    animation-iteration-count:1;
+    animation-timing-function:ease;
+    animation-delay:5.4s;
+    animation-fill-mode:backwards;
+    transform: translate(6000px, 0);
+    transition-delay: 5s;
+    transition: 3s;
+    margin-top: 4vh;
+   }
+
+   section:hover .container .title3 {
+    transform: translateX(20.5vh);
+   }
+  
+   .blinking{
+    -webkit-animation:blink .5s 6s ease-in-out infinite alternate;
+    -moz-animation:blink .5s 6s ease-in-out infinite alternate;
+    animation:blink .5s 6s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @-moz-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+
+  
+

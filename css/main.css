@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Koulen&family=Roboto:wght@700;900&display=swap');
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Bungee', cursive;
+font-family: 'Koulen', cursive;
+font-family: 'Roboto', sans-serif; */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+div {
+    font-size: 15em;
+    /* color: white; */
+    font-family: 'Roboto';
+    background: url(../Blue-starry-stars-space_m.webp);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.3em;
+
+}
+

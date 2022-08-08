@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Koulen&family=Roboto:wght@700;900&display=swap');
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Bungee', cursive;
+font-family: 'Koulen', cursive;
+font-family: 'Roboto', sans-serif; */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* 
+@import "compass/css3"; */
+
+/* @import url(https://fonts.googleapis.com/css?family=Finger+Paint); */
+
+body {
+  background: black;
+  /* overflow: hidden; */
+  font: 5vw/100vh 'Roboto', sans-serif;
+  text-align: center;
+  color: transparent;
+  backface-visibility: hidden;
+}
+
+section {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    position: relative;
+    /* align-items: center;
+    justify-content: center;
+    overflow: hidden; */
+}
+
+
+
+span {
+  display: inline-block;
+  text-shadow: 0 0 0 whitesmoke;
+  animation: smoky 5s 3s both;
+  font-size: 100px;
+}
+
+span:nth-child(even){
+  animation-name: smoky-mirror;
+}
+
+@keyframes smoky {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    transform:
+      translate3d(15rem,-8rem,0)
+      rotate(-40deg)
+      skewX(70deg)
+      scale(1.5);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@keyframes smoky-mirror {
+  60% {
+    text-shadow: 0 0 40px whitesmoke; }
+  to {
+    transform:
+      translate3d(18rem,-8rem,0)
+      rotate(-40deg) 
+      skewX(-70deg)
+      scale(2);
+     text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@for $item from 1 through 21 {
+  span:nth-of-type(#{$item}){ 
+    animation-delay: #{(3 + ($item/10))}s; 
+  }
+} 

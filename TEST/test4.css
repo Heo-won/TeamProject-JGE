@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Koulen&family=Roboto:wght@700;900&display=swap');
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Bungee', cursive;
+font-family: 'Koulen', cursive;
+font-family: 'Roboto', sans-serif; */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.txt_animate span {
+    color:white;
+    opacity: 0;
+    transform: translate(-300px, 0) scale(0);
+    animation:txtE 1.5s 5s linear infinite;
+    font-size: 15em;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .title1 {
+    transform: translate(2000px, 0);
+    transition: 2s;
+  }
+  
+  @keyframes txtE {
+    60% {
+      transform: translate(20px, 0) scale(1);
+      color:white;
+    }
+  
+    80% {
+      transform: translate(20px, 0) scale(1);
+      color:rgb(56, 56, 56);
+    }
+  
+    90% {
+      transform: translate(0) scale(1.2);
+      color:rgb(119, 119, 119);
+    }
+  
+    100% {
+      transform: translate(0) scale(1);
+      opacity: 1;
+      color:rgb(255, 255, 255);
+    }
+  }
+
+  .title2 {
+    transform: translate(-3000px, 0);
+    transition: 2s;
+  }
+
+  .title3 {
+    transform: translate(6000px, 0);
+    transition: 2s;
+  }
+
+  section:hover .container .title2 {
+    transform: translateX(-33.5vh);
+   }
+
+
+  .txt_animate span:nth-of-type(2) {
+    animation-delay: 5.05s;
+  }
+  .txt_animate span:nth-of-type(3) {
+    animation-delay: 5.1s;
+  }
+  .txt_animate span:nth-of-type(4) {
+    animation-delay: 5.15s;
+  }
+  .txt_animate span:nth-of-type(5) {
+    animation-delay: 5.2s;
+  }
+  .txt_animate span:nth-of-type(6) {
+    animation-delay: 5.25s;
+  }
